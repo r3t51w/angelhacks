@@ -17,10 +17,8 @@ contract Will {
   mapping(uint => Beneficiary) public beneficiaries;
   uint public beneficiaryCount;
 
-  constructor (uint _amount, address _lawyer) public {
+  constructor () public {
     owner = msg.sender; 
-    totalAmount = _amount;
-    lawyer = _lawyer;
   }
 
   function addBeneficiary (string _name, string _relationship, address _walletAddress) public {
